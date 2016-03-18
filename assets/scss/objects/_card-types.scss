@@ -1,0 +1,21 @@
+.Amex,
+.MasterCard,
+.Visa {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 19px;
+  width: 30px;
+}
+
+.Amex {
+  background-image: url(amex.svg);
+}
+
+.MasterCard {
+  background-image: url(mastercard.svg);
+}
+
+.Visa {
+  background-image: url(visa.svg);
+}

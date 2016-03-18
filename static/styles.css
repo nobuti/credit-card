@@ -1,0 +1,93 @@
+/* CSS Mini Reset */
+html, body, div, form, fieldset, legend, label {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+th, td {
+  text-align: left;
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6, th, td, caption {
+  font-weight: normal; }
+
+img {
+  border: 0; }
+
+html {
+  font-size: 62.5%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+  position: relative;
+  text-rendering: optimizeLegibility; }
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f2f2f2;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  min-width: 320px;
+  text-size-adjust: none; }
+
+.Field-text {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #999;
+  font-size: 0.875em;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 15px;
+  transition: border-color 0.35s; }
+  .Field-text:focus {
+    border-color: skyblue; }
+  .Field-text::-webkit-input-placeholder {
+    color: #ddd; }
+  .Field-text::-moz-placeholder {
+    color: #ddd;
+    opacity: 1; }
+  .Field-text:-ms-input-placeholder {
+    color: #ddd; }
+
+.Amex,
+.MasterCard,
+.Visa {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 19px;
+  width: 30px; }
+
+.Amex {
+  background-image: url(amex.svg); }
+
+.MasterCard {
+  background-image: url(mastercard.svg); }
+
+.Visa {
+  background-image: url(visa.svg); }
+
+.Credit-card {
+  display: inline-block;
+  position: relative;
+  padding: 20px; }
+  .Credit-card .Field-text {
+    text-align: center;
+    width: 200px;
+    padding-right: 50px; }
+  .Credit-card .Amex,
+  .Credit-card .MasterCard,
+  .Credit-card .Visa {
+    opacity: 0.4;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%); }

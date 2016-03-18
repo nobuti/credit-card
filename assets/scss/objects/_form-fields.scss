@@ -1,0 +1,27 @@
+.Field-text {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #999;
+  font-size: 0.875em;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 15px;
+  transition: border-color 0.35s;
+
+  &:focus {
+    border-color: skyblue;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #ddd;
+  }
+
+  &::-moz-placeholder {
+    color: #ddd;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: #ddd;
+  }
+}

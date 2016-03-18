@@ -1,0 +1,23 @@
+.Credit-card {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+
+  .Field-text {
+    text-align: center;
+    width: 200px;
+    padding-right: 50px;
+  }
+
+  .Amex,
+  .MasterCard,
+  .Visa {
+    opacity: 0.4;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+}
