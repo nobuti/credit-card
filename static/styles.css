@@ -30,13 +30,22 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #f2f2f2;
   color: #444;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   min-height: 100vh;
   min-width: 320px;
-  text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none; }
 
 .Field-text {
   border: 1px solid #ddd;
@@ -46,6 +55,7 @@ body {
   height: 40px;
   line-height: 38px;
   padding: 0 15px;
+  -webkit-transition: border-color 0.35s;
   transition: border-color 0.35s; }
   .Field-text:focus {
     border-color: skyblue; }
@@ -90,4 +100,5 @@ body {
     position: absolute;
     right: 30px;
     top: 50%;
-    transform: translateY(-50%); }
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
